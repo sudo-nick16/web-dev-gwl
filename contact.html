@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .input{
+            padding-bottom: 5px;
+            margin-top: 25px;
+            outline: none;
+            border: 0;
+            border-bottom: 1px solid;
+            border-color: rgb(94, 94, 94);
+            margin-bottom: 10px;
+            width: 100%;
+            padding-bottom: 8px;
+
+        }
+        form{
+            padding-top: 40px;
+            text-align: justify;
+            background-color: white;
+            width: 20%;
+            margin: auto;
+            padding-bottom: 40px;
+            border-radius: 5px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        body{
+            margin:0;
+            color:black;
+            /* background-color: rgb(224, 224, 224); */
+            background: linear-gradient(to bottom, rgb(25, 9, 41), purple, pink,white) fixed;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #btn{
+            margin-top: 50px;
+            
+            background-color: rgb(11, 111, 192);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+        }
+        nav{
+            margin:0;
+            background-color: rgb(25, 9, 41);
+            text-align: center;
+            color:white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+        .navb{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        span{
+            padding: 40px;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span><a class="navb" href="./main.html">TRIPS</a></span>
+        <span><a class="navb" href="./about.html">ABOUT</a></span>
+        <span ><a class="navb" href="./contact.html" style="color:blueviolet">CONTACT</a></span>
+    </nav>
+    <center><h2>Contact Me..</h2></center>
+    <center><form action="" method="post">
+        <input class="input" type="text" placeholder="Full Name"required/><br>
+        <input class="input" type="email" placeholder="Email" required/> <br>
+        <input class="input" type="tel" maxlength="10"  placeholder="Contact Number"required/><br>
+        <center><input type="submit" id="btn" value="Submit"></center>
+
+    </form>
+</center>
+</body>
+</html>
