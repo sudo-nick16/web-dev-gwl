@@ -1,89 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.3.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.3.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.3.0/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            margin:0;
+            background-color: rgb(25, 9, 41);
+            text-align: center;
+            color:white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: bold;
         }
-      });
-    </script>
-  </body>
+        span{
+            padding: 40px;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        body{
+            margin:0;
+            color:black;
+            /* background-color: rgb(224, 224, 224); */
+            background-image: linear-gradient(to bottom, rgb(25, 9, 41), purple, pink,white);
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        #main{
+            width: 100%;
+            max-height: 500px;
+            margin: 0;
+        }
+        h2{ margin-top: 0;
+            text-align: center;
+            color: rgb(219, 205, 219);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+            font-size: 50px;
+            /* text-shadow: 2px 2px 3px rgb(168, 168, 168); */
+        }
+        #collection{
+            text-align: center;
+            margin: auto;
+            width: 90%;
+        
+        }
+        .pics{
+            display: inline-block;
+            background-color: white;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .navb{
+            text-decoration: none;
+            color: white;
+        }
+        #place{
+            color:darkslategray;
+            background-color: white;
+            margin: auto;
+            padding-top: 10px;
+            text-align: center;
+        }
+        p{
+           padding-left: 50px;
+           padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span><a class="navb" href="./index.html" style="color:blueviolet">TRIPS</a></span>
+        <span><a class="navb" href="./about.html">ABOUT</a></span>
+        <span><a class="navb" href="./contact.html">CONTACT</a></span>
+    </nav>
+    <img id='main' src="./v.jpg" alt="" >
+    <h2 >My Travel Diary</h2>
+    <div id='collection'>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/vd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>Venice</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/cd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>Canada</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/chd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>China</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/jd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>Japan</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/nd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>Norway</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/ad.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>Amsterdam</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/nyd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>New York</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/dd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>Dubai</h3></a>
+        </div>
+        <div class="pics">
+            <a href="./place.html"><img src="./assets/fd.jpg" width="300" height="200" alt=""></a>
+            <a href="./place.html"><h3>France</h3></a>
+        </div>
+    </div>
+</body>
 </html>

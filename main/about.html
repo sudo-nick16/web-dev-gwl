@@ -18,16 +18,19 @@
             padding-bottom: 8px;
 
         }
-        form{
+        #good{
             padding-top: 40px;
             text-align: justify;
-            background-color: white;
-            width: 20%;
+            background-color: rgb(255, 255, 255);
+            width: 60%;
             margin: auto;
             padding-bottom: 40px;
             border-radius: 5px;
             padding-left: 35px;
             padding-right: 35px;
+            line-height: 2;
+            text-align: center;
+            font-family: Verdana;
         }
         body{
             margin:0;
@@ -70,22 +73,28 @@
             font-size: 20px;
             text-decoration: underline;
         }
+        p{
+            font-size: 20px;
+            color: rgb(250, 11, 11);
+            /* text-shadow:1px 1px 1px cyan; */
+        }
     </style>
 </head>
 <body>
     <nav>
-        <span><a class="navb" href="./main.html">TRIPS</a></span>
-        <span><a class="navb" href="./about.html">ABOUT</a></span>
-        <span ><a class="navb" href="./contact.html" style="color:blueviolet">CONTACT</a></span>
+        <span><a class="navb" href="./index.html">TRIPS</a></span>
+        <span><a class="navb" href="./about.html" style="color:blueviolet">ABOUT</a></span>
+        <span ><a class="navb" href="./contact.html" >CONTACT</a></span>
     </nav>
-    <center><h2>Contact Me..</h2></center>
-    <center><form action="" method="post">
-        <input class="input" type="text" placeholder="Full Name"required/><br>
-        <input class="input" type="email" placeholder="Email" required/> <br>
-        <input class="input" type="tel" maxlength="10"  placeholder="Contact Number"required/><br>
-        <center><input type="submit" id="btn" value="Submit"></center>
+    <center><h2>About Me</h2></center>
+    <center>
+        <div id="good">
+           <p>Hi, I'm Nikit a.k.a sudo nick and this is my project for the day 4 web-dev challenges. <br>
+            I made it basic because i didn't have much time to add any nice features to it. <br>
+            Thanks!! 
+            </p> 
+        </div>
 
-    </form>
 </center>
 </body>
 </html>
