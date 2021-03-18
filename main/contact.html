@@ -35,7 +35,7 @@
             /* background-color: rgb(224, 224, 224); */
             background: linear-gradient(to bottom, rgb(25, 9, 41), purple, pink,white) fixed;
             font-size: 20px;
-            font-family: sans-serif;
+            font-family:Verdana;
         }
         #btn{
             margin-top: 50px;
@@ -65,11 +65,39 @@
             text-decoration: none;
             color: rgb(255, 255, 255);
         }
+        .navb:hover {
+                transform: scale(1.5);
+                color: blueviolet;
+        }
         span{
             padding: 40px;
             font-size: 20px;
             text-decoration: underline;
         }
+        #icons{
+            
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-right:0;
+            max-height: 80px;
+            
+        }
+        /* a{
+            padding-left: 15px;
+            padding-right: 15px;
+        } */
+        .h{
+            transition: transform .2s;
+        }
+        .h:hover {
+            transform: scale(1.25);
+        }
+        .zoom{
+            padding-left: 40px;
+            padding-right: 15px;            
+            display: inline-block;
+        }
+
     </style>
 </head>
 <body>
@@ -78,14 +106,16 @@
         <span><a class="navb" href="./about.html">ABOUT</a></span>
         <span ><a class="navb" href="./contact.html" style="color:blueviolet">CONTACT</a></span>
     </nav>
-    <center><h2>Contact Me..</h2></center>
-    <center><form action="" method="post">
-        <input class="input" type="text" placeholder="Full Name"required/><br>
-        <input class="input" type="email" placeholder="Email" required/> <br>
-        <input class="input" type="tel" maxlength="10"  placeholder="Contact Number"required/><br>
-        <center><input type="submit" id="btn" value="Submit"></center>
-
-    </form>
+    <br>
+    <center><h2>Connect with me..</h2></center>
+    <br>
+    <center>
+        <div id="icons">
+        <div class= "zoom"><a  href="https://www.youtube.com/channel/UCwVCh3aowRqDm4n5GUPcz2Q" target="_blank"><img class = "h" src="./assets/yt.png" alt="Yt channel" width="60px" height="60px"></a></div>
+        <div class= "zoom"><a  href="http://instagram.com/sudo_nick/" target="_blank"><img class  = "h" src="./assets/insta.png" alt="instagram" width="60px" height="60px"></a></div>
+        <div class= "zoom"><a  href="http://github.com/sudo-nick16" target="_blank"><img class = "h" src="./assets/gh.png" alt="github" width="60px" height="60px"></a></div>
+        <div class= "zoom"><a  href="http://linkedin.com/in/sudo-nick" target="_blank"><img class = "h" src="./assets/ln.png" alt="linkedin" width="60px" height="60px"></a></div>
+    </div>
 </center>
 </body>
 </html>
