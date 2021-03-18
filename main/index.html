@@ -14,9 +14,10 @@
             padding-top: 20px;
             padding-bottom: 20px;
             font-weight: bold;
+            width: 100%;
         }
         span{
-            padding: 40px;
+            padding: 5%;
             font-size: 20px;
             text-decoration: underline;
         }
@@ -44,6 +45,7 @@
             text-align: center;
             margin: auto;
             width: 90%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         
         }
         .pics{
@@ -61,7 +63,12 @@
         }
         .navb{
             text-decoration: none;
+            display: inline-block;
+            transition: transform .2s;
             color: white;
+        }
+        .navb:hover{
+            transform: scale(1.25);
         }
         #place{
             color:darkslategray;
@@ -74,53 +81,68 @@
            padding-left: 50px;
            padding-right: 50px;
         }
+        footer{
+            clear: both;
+            position: relative;
+            margin-bottom: 0;
+            text-align: center;
+            
+        }
+        h5{
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <span><a class="navb" href="./index.html" style="color:blueviolet">TRIPS</a></span>
+        <span><a class="navb" href="./index.html" style="color:blueviolet">PLACES</a></span>
         <span><a class="navb" href="./about.html">ABOUT</a></span>
         <span><a class="navb" href="./contact.html">CONTACT</a></span>
     </nav>
     <img id='main' src="./v.jpg" alt="" >
-    <h2 >My Travel Diary</h2>
+    <h2 >My Dream Places</h2>
     <div id='collection'>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/vd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>Venice</h3></a>
+            <a href="https://en.wikipedia.org/wiki/Venice"><img src="./assets/vd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Venice"><h3>Venice</h3></a>
         </div>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/cd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>Canada</h3></a>
+            <a href="https://en.wikipedia.org/wiki/Norway"><img src="./assets/nd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Norway"><h3>Norway</h3></a>
         </div>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/chd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>China</h3></a>
+            <a href="https://en.wikipedia.org/wiki/France"><img src="./assets/fd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/France"><h3>France</h3></a>
         </div>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/jd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>Japan</h3></a>
+            <a href="https://en.wikipedia.org/wiki/Amsterdam"><img src="./assets/ad.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Amsterdam"><h3>Amsterdam</h3></a>
         </div>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/nd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>Norway</h3></a>
+            <a href="https://en.wikipedia.org/wiki/New_York_City"><img src="./assets/nyd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/New_York_City"><h3>New York</h3></a>
+        </div>
+        
+        <div class="pics">
+            <a href="https://en.wikipedia.org/wiki/Dubail"><img src="./assets/dd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Dubai"><h3>Dubai</h3></a>
         </div>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/ad.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>Amsterdam</h3></a>
+            <a href="https://en.wikipedia.org/wiki/Japan"><img src="./assets/jd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Japan"><h3>Japan</h3></a>
         </div>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/nyd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>New York</h3></a>
+            <a href="https://en.wikipedia.org/wiki/Canada"><img src="./assets/cd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Canada"><h3>Canada</h3></a>
         </div>
         <div class="pics">
-            <a href="./place.html"><img src="./assets/dd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>Dubai</h3></a>
+            <a href="https://en.wikipedia.org/wiki/China"><img src="./assets/chd.jpg" width="300" height="200" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/China"><h3>China</h3></a>
         </div>
-        <div class="pics">
-            <a href="./place.html"><img src="./assets/fd.jpg" width="300" height="200" alt=""></a>
-            <a href="./place.html"><h3>France</h3></a>
-        </div>
+
     </div>
+    <footer>
+        <h5>@sudo-nick</h5>
+    </footer>
 </body>
 </html>
